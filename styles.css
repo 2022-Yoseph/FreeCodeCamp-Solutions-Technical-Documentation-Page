@@ -44,4 +44,8 @@ body {
   #main-doc {
     padding: 10px;
   }
+  #footer {
+    padding: 15px;
+  }
+}
 }

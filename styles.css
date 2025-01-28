@@ -1,51 +1,55 @@
-/* Base styles for larger screens (default styling) */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* media query for ipads */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+    font-size: 24px; /* Reduces size of header font */
+    }
 }
-
+html, body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+header {
+  font-size: 32px;
+}
 #navbar {
-  background-color: #333;
-  padding: 10px;
-}
-
-#navbar a {
-  color: white;
-  padding: 10px;
+  position: fixed;
   text-decoration: none;
-  display: inline-block;
+  width: 10vw;
+  min-width: 300px;
+  left: 0px;
+  border-right: 1px solid #000;
+  height: 100%;
+  text-align: center;
 }
-
-#navbar a:hover {
-  background-color: #575757;
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  border-top: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 10px;
 }
-
 #main-doc {
-  padding: 20px;
+  display: inline-block;
+  margin-left: 320px;
 }
-
-/* Media Query for small screens (phones) */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-
-  #navbar {
-    text-align: center;
-  }
-
-  #navbar a {
+code {  /* took this from the examples :) */
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
     display: block;
-    margin: 5px 0;
+    text-align: left;
+    line-height: 2;
+    background-color: #f7f7f7;
     padding: 15px;
-  }
-
-  #main-doc {
-    padding: 10px;
-  }
-  #footer {
-    padding: 15px;
-  }
+    margin: 10px;
+    border-radius: 5px;
 }
-}
+@media
